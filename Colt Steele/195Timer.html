@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="195Timer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timer">
+        <div class="controls">
+            <input type="text"  id="duration" value="30" />
+            <div>
+                <button id="start"><i class="fas fa-play"></i></button>
+                <button id="pause"><i class="fas fa-pause"></i></button>
+            </div>
+        </div>
+        
+    <svg class="dial">
+        <circle
+            r="190" 
+            cx="200"
+            cy= "200"
+            fill = "transparent"
+            stroke = "blue"
+            stroke-width = "15"
+            transform = "rotate(-90 200 200)"
+        />
+    </svg>
+</div>
+    <!-- circle attributes
+         stroke-dasharray = "565"
+    stroke-dashoffset = "-20" -->
+    
+    <script src="195Timer.js"></script>
+</body>
+</html>
